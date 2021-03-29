@@ -14,15 +14,15 @@
 
 <body id="home">
   <header class="hero">
-    <div id="navbar" class="navbar">
+    <div id="navbar" class="navbar top">
       <h1 class="logo">
-        <a href="#"><i class="fas fa-hand-scissors"></i> HJ</a>
+        <a href="#home"><i class="fas fa-hand-scissors"></i> HJ</a>
       </h1>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#cases">Cases</a></li>
+          <li><a href="#sample-photos">Photos</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -78,7 +78,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias illum, animi earum ea amet sequi
               reiciendis sit corporis sunt iusto cupiditate odio maxime adipisci cumque eligendi nemo dolore id itaque?
             </p>
-            <a href="#" class="btn btn-outline">Read More</a>
+            <a href="prices.html" class="btn btn-outline">Prices</a>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
 
 
     <!-- Sample photos -->
-    <section id="sample-photos" class="section-padding">
+    <section id="sample-photos" class="photos section-padding">
       <header class="section-header">
         <h4>This is what we do</h4>
         <h2>Sample Photos</h2>
@@ -123,7 +123,78 @@
       </div>
     </section>
 
+    <!-- Blog -->
+    <section id="blog" class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/home/showcase-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="column bg-secondary">
+          <div class="column-2">
+            <h4>March 23 2021</h4>
+            <h2>Blog Post One</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias illum, animi earum ea amet sequi
+              reiciendis sit corporis sunt iusto cupiditate odio maxime adipisci cumque eligendi nemo dolore id itaque?
+            </p>
+            <a href="blog.html" class="btn btn-outline">
+              Read Our Blog
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team section-padding">
+      <header class="section-header">
+        <h2>Get to know our team</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, dolore!</p>
+      </header>
+      <div class="flex-items">
+        <div>
+          <img src="images/team/testimonial-1.jpg" alt="">
+          <h4>John Xyz</h4>
+          <p>Co-founder</p>
+        </div>
+        <div>
+          <img src="images/team/pexels-elle-hughes-1680172.jpg" alt="">
+          <h4>Michael Xyz</h4>
+          <p>Founder of HJ</p>
+        </div>
+        <div>
+          <img src="images/team/pexels-daniel-xavier-1121796.jpg" alt="">
+          <h4>Jeremy Xyz</h4>
+          <p>Co-founder</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light contact">
+      <h3>Request Callback</h3>
+      <form action="">
+        <input type="text" placeholder="Enter name" name="name">
+        <input type="email" placeholder="Enter email" name="email">
+        <input type="tel" placeholder="Enter phone" name="phone">
+      </form>
+      <input type="submit" value="Send" class="btn">
+    </section>
   </main>
+
+
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+      <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2021 - HJ</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
