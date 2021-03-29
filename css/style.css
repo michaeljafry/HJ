@@ -44,10 +44,14 @@ img {
   opacity: 0.8;
   width: 100%;
   height: 70px;
-  /* position: fixed; */
+  position: fixed;
   top: 0px;
   padding: 0 30px;
-  /* transition: 0.5s; */
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .navbar ul {
@@ -74,6 +78,7 @@ img {
 }
 
 
+
 /* Header */
 .hero {
   background: url('../images/home/showcase-1.jpg') no-repeat center center/cover;
@@ -95,8 +100,7 @@ img {
   font-size: 55px;
   margin-bottom: 30px;
   color: #fff;
-  font-family: 'Ranchers', cursive;
-  font-weight: 1;
+  font-weight: 1000;
 }
 
 .hero::before {
@@ -113,6 +117,11 @@ img {
   z-index: 10;
 }
 
+.hero.blog {
+  background: url('../images/home/showcase-5.jpg') no-repeat center center/cover;
+  height: 50vh;
+}
+
 
 /* Icons */
 .icons {
@@ -126,15 +135,216 @@ img {
 
 .icons i {
   background: #28a745;
-  /* color: #fff; */
   padding: 1rem 1.2rem;
   border-radius: 50%;
   margin-bottom: 15px;
 }
 
-#sample-photos img:hover {
+
+
+/* Sample-photos */
+.photos .row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 0 4px;
+}
+
+.photos .column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 3px;
+}
+
+.photos img:hover {
   opacity: 0.7;
 }
+
+
+
+/* Team */
+.team .flex-items > div {
+  padding: 0;
+  margin: 20px;
+}
+
+
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h3 {
+  font-size: 30px;
+}
+
+.contact form {
+  width: 40%;
+  margin: 14px;
+  /* padding: 20px; */
+}
+
+.contact input {
+  margin: 7px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact .btn {
+  width: 40%;
+  padding: 10px;
+}
+
+.contact input:focus {
+  outline-style: none;
+}
+
+
+/* Post */
+.post {
+  padding: 50px 30px;
+  color: #333;
+}
+
+.post h2 {
+  border-bottom: 1px #ccc solid;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.post img {
+  border-radius: 50%;
+  width: 400px;
+  display: block;
+  margin: 30px auto;
+}
+
+
+/* Prices */
+.address {
+  margin-top: 50px;
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+}
+
+.footer i {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer i:hover {
+  color: #28a745;
+}
+
+
+
+/* Mobile */
+@media(max-width: 1000px) {
+  #about .flex-items > div {
+    margin: 0;
+  }
+}
+
+
+@media(max-width: 786px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .photos .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
+}
+
+
+@media(max-width: 414px) {
+  .navbar li {
+    font-size: 18px;
+  }
+
+  .hero .content h1 {
+    margin-top: 90px;
+    font-size: 35px;
+  }
+
+  .hero .content .btn {
+    font-size: 16px;
+  }
+
+  .contact form,
+  .contact .btn {
+    width: 90%;
+  }
+}
+
+
+@media(max-width: 375px) {
+  .navbar {
+    z-index: 20;
+  }
+
+  .navbar li {
+    font-size: 16px;
+  }
+
+  .hero .content h1 {
+    font-size: 30px;
+  }
+
+  .hero .content .btn {
+    font-size: 16px;
+  }
+
+  .post img{
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
